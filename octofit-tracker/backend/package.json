@@ -1,4 +1,14 @@
 {
+  "name": "octofit-tracker-backend",
+  "version": "0.1.0",
+  "description": "Express logic tier for Octofit Tracker",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx watch src/server.ts",
+    "seed": "tsx src/scripts/seed.ts",
+    "start": "node dist/server.js"
+  },
   "dependencies": {
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
