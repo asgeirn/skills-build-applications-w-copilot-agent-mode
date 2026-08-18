@@ -5,7 +5,12 @@ import Leaderboard from './components/Leaderboard.jsx'
 import Teams from './components/Teams.jsx'
 import Users from './components/Users.jsx'
 import Workouts from './components/Workouts.jsx'
-import { apiBaseUrl, isCodespacesApiConfigured } from './services/api.js'
+
+const codespaceName = import.meta.env.VITE_CODESPACE_NAME
+const isCodespacesApiConfigured = Boolean(codespaceName)
+const apiBaseUrl = isCodespacesApiConfigured
+  ? `https://${codespaceName}-8000.app.github.dev/api`
+  : 'http://localhost:8000/api'
 
 const navigationItems = [
   { path: '/users', label: 'Users' },
