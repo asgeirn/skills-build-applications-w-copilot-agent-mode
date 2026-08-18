@@ -69,7 +69,7 @@ function Workouts() {
       </div>
 
       {loading && <div className="state-message">Loading workouts...</div>}
-      {error && <div className="alert alert-danger">{error}</div>}
+      {error && <div className="alert alert-danger" role="alert">{error}</div>}
 
       {!loading && !error && (
         <div className="table-responsive">

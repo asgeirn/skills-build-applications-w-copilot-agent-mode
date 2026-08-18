@@ -7,7 +7,7 @@ import { Team } from './models/team.js';
 import { User } from './models/user.js';
 import { Workout } from './models/workout.js';
 
-const PORT = Number(process.env.PORT) || 8000;
+const PORT = 8000;
 const codespaceName = process.env.CODESPACE_NAME;
 const apiBaseUrl = codespaceName
   ? `https://${codespaceName}-8000.app.github.dev`

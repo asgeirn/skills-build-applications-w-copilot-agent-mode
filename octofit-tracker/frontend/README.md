@@ -21,7 +21,7 @@ If `VITE_CODESPACE_NAME` is unset, the app safely falls back to `http://localhos
 ## Scripts
 
 ```bash
-npm run dev
-npm run build
-npm run preview
+npm --prefix octofit-tracker/frontend run dev
+npm --prefix octofit-tracker/frontend run build
+npm --prefix octofit-tracker/frontend run preview
 ```
