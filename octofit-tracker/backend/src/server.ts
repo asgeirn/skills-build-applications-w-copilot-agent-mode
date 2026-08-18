@@ -15,6 +15,12 @@ const apiBaseUrl = codespaceName
 
 const app = express();
 
+app.use((_request: Request, response: Response, next) => {
+  response.header('Access-Control-Allow-Origin', '*');
+  response.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+  next();
+});
+
 app.use(express.json());
 
 app.get('/api/users/', async (_request: Request, response: Response) => {
