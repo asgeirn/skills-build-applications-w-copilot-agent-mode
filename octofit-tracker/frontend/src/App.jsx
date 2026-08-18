@@ -1,5 +1,6 @@
 import { NavLink, Navigate, Route, Routes } from 'react-router-dom'
 import './App.css'
+import appLogo from '../../../docs/octofitapp-small.png'
 import Activities from './components/Activities.jsx'
 import Leaderboard from './components/Leaderboard.jsx'
 import Teams from './components/Teams.jsx'
@@ -25,6 +26,7 @@ function App() {
     <div className="app-shell">
       <header className="app-header">
         <div>
+          <img src={appLogo} alt="Octofit Tracker logo" width="56" height="56" />
           <p className="eyebrow">Octofit Tracker</p>
           <h1>Fitness teams, activity, and coaching data</h1>
         </div>
